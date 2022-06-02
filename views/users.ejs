@@ -1,0 +1,58 @@
+<style>
+
+</style>
+<body onload="AdminChecker">
+<div class="main">
+    <div class="userTable">
+        <h1>All Users</h1>
+        <table class="content-table">
+            <thead>
+            <tr>
+                <th>User</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+            </thead>
+            <tbody><%users.forEach(users=>{%>
+            <tr>
+                <td id="username"><%=users.name %></td>
+                <td><%=users.age %></td>
+                <td><%=users.salary %></td>
+                <td><a href="/user/delete/<%=users.name%>">delete</a></td>
+                <td><a href="/user/edit/<%=users.name%>">edit</a></td>
+            </tr>
+            <%})
+            %>
+            </tbody>
+        </table>
+    </div>
+    <div class="editBtn">
+        <button class="button-36"><a href="/user/add">Add user</a></button>
+    </div>
+
+    <h1>Museum</h1>
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Street</th>
+        </tr>
+        </thead>
+        <tbody><%museum.forEach(museum=>{%>
+        <tr>
+            <td id="username"><%=museum.mname %></td>
+            <td><%=museum.street %></td>
+            <td><a href="/user/delete/<%=museum.mname%>">delete</a></td>
+        </tr>
+        <%})
+        %>
+        </tbody>
+    </table>
+</div>
+<div class="editBtn">
+    <button class="button-36"><a href="/user/madd">Add museum</a></button>
+</div>
+<script src="mongojs.js"></script>
+</body>

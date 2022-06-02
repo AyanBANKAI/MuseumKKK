@@ -1,0 +1,23 @@
+[{
+    "userName": "Arsen",
+    "userEmail": "arsen@mail.ru ",
+    "userCity": "kokshetau",
+    "userPassword": "1234And@!,",
+    "isAdmin": true
+},
+    {
+        "userName": "Erlan",
+        "userEmail": "erlan@mail.ru ",
+        "userCity": "kokshetau",
+        "userPassword": "2141241@awdAWD@!",
+        "isAdmin": false
+    },
+    {
+        "userName": "Egor",
+        "userEmail": "egor@mail.ru ",
+        "userCity": "nur-sultan",
+        "userPassword": "1234dawAndawd@!@!",
+        "isAdmin": false
+    }
+
+]
